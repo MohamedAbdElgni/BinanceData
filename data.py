@@ -40,7 +40,8 @@ class Binance_data:
             df['open'] = df['open'].astype(float)
             df['high'] = df['high'].astype(float)
             df['low'] = df['low'].astype(float)
-            df['close'] = df['close'].astype(float)
+            # 10 Dicemal places for close price
+            df['close'] = df['close'].astype(float).round(10)
             df['volume'] = df['volume'].astype(float)
             df['quote_asset_volume'] = df['quote_asset_volume'].astype(float)
             df['taker_buy_base_asset_volume'] = df['taker_buy_base_asset_volume'].astype(
