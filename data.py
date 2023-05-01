@@ -102,3 +102,4 @@ class Binance_data:
         print(
             f"Data saved successfully to {settings.get_filename_csv(df=self.__model_data, symbol=self.__symbol,invertal=self.__invertal),}")
         return self.__model_data
+#wep developments in this branch
